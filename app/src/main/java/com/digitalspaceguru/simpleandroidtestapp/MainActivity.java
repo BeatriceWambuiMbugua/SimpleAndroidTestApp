@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTextView = (TextView) findViewById(R.id.textView);
+        gridView = (GridView) findViewById(R.id.baseGridView);
+        gridView.setAdapter(new AlphabetAdapter(this, letters));
 
 
         Intent intent = new Intent(this, MainActivity.class);
